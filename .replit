@@ -1,6 +1,7 @@
 modules = ["web", "python-3.11"]
 [agent]
 expertMode = true
+integrations = ["replitmail:1.0.0"]
 
 [nix]
 channel = "stable-25_05"
@@ -32,10 +33,6 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 43981
-externalPort = 3000
 
 [deployment]
 deploymentTarget = "autoscale"
